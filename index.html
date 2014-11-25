@@ -1,19 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: Some University
-address: 456 Main St #123 Somewhere, SW
-country: Some-Country
-latlng: 12.34, -56.78
-humandate: Jan 02-03, 2015
-humantime: 9:00 am - 4:30 pm
-startdate: 2015-01-02
-enddate: 2015-01-03
-instructor: ["A Nice Human", "Some Human", "Another Nice-Human"]
-helper: ["More NicePeople", "Smart Human"]
-contact: someone@somewhere.org
-etherpad: # FIXME (insert the URL for your Etherpad if you're using one)
-eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+venue: University of Melbourne
+address: Sidney Myer Asia Centre
+country: Australia
+latlng: -37.799243, 144.964422
+humandate: Feb 16-17, 2015
+humantime: 9:00 am - 5:00 pm
+startdate: 2015-02-16
+enddate: 2015-02-17
+instructor: ["Damien Irving"]
+helper: []
+contact: irving.damien@gmail.com
+etherpad: https://etherpad.mozilla.org/2015-02-16-resbaz-python
 ---
 <!--
   Edit the values in the block above to be appropriate for your
@@ -21,21 +20,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   changes are good.
 -->
 
-<!--
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  pwidth="100%"
-  height="206px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 <h2>General Information</h2>
 
@@ -44,12 +28,17 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
+  The mission of the <a href="{{site.swc_site}}">Software Carpentry</a>
+  project is to help researchers be more productive by teaching them basic
+  computing skills. Researchers often spend much of their time wrestling
+  with software, but most are self-taught programmers. As a result, they
+  spend hours doing things that should take minutes, reinvent a lot of
+  wheels, and still don't know if their results are reliable. To tackle
+  this problem, Software Carpentry runs two-day workshops at
+  <a href="http://software-carpentry.org/workshops/previous.html">hundreds
+  of sites around the world</a>. These hands-on workshops cover basic
   concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
+  management, and task automation. Participants are be encouraged to
   help one another and to apply what they have learned to their own
   research problems.
 </p>
@@ -60,7 +49,9 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The workshop is restricted to 
+  <a href="http://resbaz.tumblr.com/conference">Research Bazaar</a> attendees  
+  who signed up for the "Programming and Data Analysis with Python" stream.
 </p>
 
 <!--
@@ -116,30 +107,11 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
 -->
 <h2>Schedule</h2>
 
-<div class="row-fluid">
-  <div class="span6">
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-  <div class="span6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
-</div>
+<p>
+  The class schedule will be released closer to the event. As well as 
+  attending this Software Carpentry workshop, people who signed up for
+  the "Programming and Data Analysis with Python" stream will have the
+  opportunity to attend a number of other elective classes at ResBaz. 
 
 <!--
   Display the Etherpad for the workshop.  You will probably set this
@@ -188,7 +160,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li>Looping over files</li>
       <li>Creating and running shell scripts</li>
       <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference card...</a></li>
+      <li><a href="{{site.swc_lessons}}/shell/index.html">Lesson notes...</a></li>
     </ul>
   </div>
   <div class="span6">
@@ -201,7 +174,8 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li>Loops and conditionals</li>
       <li>Defensive programming</li>
       <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference card...</a></li>
+      <li><a href="{{site.swc_lessons}}/python/index.html">Lesson notes...</a></li>
     </ul>
   </div>
   <!-- 
@@ -226,26 +200,10 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
       <li>Creating a repository</li>
       <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
       <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
       <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
       <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
+      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference card...</a></li>
+      <li><a href="{{site.swc_lessons}}/git/index.html">Lesson notes...</a></li>
     </ul>
   </div>
 </div>
@@ -488,84 +446,6 @@ eventbrite: # FIXME (delete this if not used, otherwise uncomment and provide 12
     </div>
   </div>
 </div> <!-- End of 'Python' section. -->
-
-<div> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row-fluid">
-    <div class="span4">
-      <h4>Windows</h4>
-      <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="span4">
-      <h4>Mac OS X</h4>
-      <p>
-	Install R by downloading and running
-	<a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-	Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="span4">
-      <h4>Linux</h4>
-      <p>
-	You can download the binary files for your distribution
-	from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-	you can use your package manager (e.g. for Debian/Ubuntu
-	run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-	<a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row-fluid">
-    <div class="span4">
-      <h4>Windows</h4>
-      <p>
-	Download the <a href="{{site.swc_files}}/sqlite3.exe">sqlite3
-	  program</a> and put it in the directory where you are running
-	examples.
-      </p>
-    </div>
-    <div class="span4">
-      <h4>Mac OS X</h4>
-      <p>
-	<code>sqlite3</code> comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="span4">
-      <h4>Linux</h4>
-      <p>
-	<code>sqlite3</code> comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
